@@ -15,10 +15,10 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Your Name</span>
+              Hi, I'm <span className="highlight">Carrie Liu</span>
             </h1>
             <h2 className="hero-subtitle">
-              Full Stack Developer & Designer
+              Biomedical Engineering Student
             </h2>
             <p className="hero-description">
               I create beautiful, functional, and user-centered digital experiences. 

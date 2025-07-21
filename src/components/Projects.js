@@ -66,7 +66,6 @@ const Projects = () => {
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
 
   return (
     <section id="projects" className="projects">
@@ -76,37 +75,6 @@ const Projects = () => {
         <div className="featured-projects">
           {featuredProjects.map((project) => (
             <div key={project.id} className="project-card featured">
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-                <div className="project-overlay">
-                  <div className="project-links">
-                    <a href={project.liveUrl} className="btn btn-small" target="_blank" rel="noopener noreferrer">
-                      Live Demo
-                    </a>
-                    <a href={project.githubUrl} className="btn btn-small btn-outline" target="_blank" rel="noopener noreferrer">
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-technologies">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <h2 className="section-title">Other Projects</h2>
-        
-        <div className="projects-grid">
-          {otherProjects.map((project) => (
-            <div key={project.id} className="project-card">
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
