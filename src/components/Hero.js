@@ -18,14 +18,22 @@ const Hero = () => {
               Hi, I'm <span className="highlight">Carrie Liu</span>
             </h1>
             <h2 className="hero-subtitle">
-              Biomedical Engineering Student
+              Biomedical Engineering Student @ University of Waterloo
             </h2>
             <p className="hero-description">
-              I create beautiful, functional, and user-centered digital experiences. 
-              Passionate about clean code, innovative design, and building products 
-              that make a difference.
+            I’m passionate about combining software and mechanical expertise to drive innovative technological solutions. 
+            With extensive experience in prototyping and design, I focus on creating practical, impactful solutions across a 
+            range of applications. 
             </p>
             <div className="hero-buttons">
+            <a 
+                href="/personal-portfolio/resume.pdf" 
+                className="btn btn-resume" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                View Resume
+              </a>
               <button 
                 className="btn"
                 onClick={() => scrollToSection('projects')}
@@ -38,6 +46,7 @@ const Hero = () => {
               >
                 Get In Touch
               </button>
+              
             </div>
           </div>
           
